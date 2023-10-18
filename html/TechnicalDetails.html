@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Technical Description of JCRdb (Jena Clinical Research Database) v1.0 &#8212; Technical Description of JCRdb (Jena Clinical Research Database) v1.0  documentation</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b3523f8e" />
-    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=039e1c02" />
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
-    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b3523f8e" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=b3ba4146"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Concepts predefined in the database" href="TechnicalDetails_Appendix_Concepts.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="index.html" />
    
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
@@ -43,7 +45,7 @@
 <p>The database is available to a group of staff at the University Hospital of Jena. It is not available to the public. Multiple instances (i.e. database files) can be used to manage different projects independently. The database is designed to be easily extensible, allowing the addition of new data types and functionalities. Data can also be exchanged with other database instances or other systems using a defined HL7 JSON file standard.</p>
 <p>The following figure illustrates the principle architecture of the database:</p>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../_images/img_db_scheme_jena.png"><img alt="../_images/img_db_scheme_jena.png" src="../_images/img_db_scheme_jena.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/img_db_scheme_jena.png"><img alt="_images/img_db_scheme_jena.png" src="_images/img_db_scheme_jena.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">Overview to the database employed at the Jena University Hospital</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </figcaption>
@@ -68,7 +70,7 @@
 <li><p>Data Model: Utilizes the i2b2 Common Data Model (CDM) 16 star schema, optimized for the agile storage and retrieval of multimodal clinical data.</p></li>
 </ul>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../_images/img_db_scheme.png"><img alt="../_images/img_db_scheme.png" src="../_images/img_db_scheme.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/img_db_scheme.png"><img alt="_images/img_db_scheme.png" src="_images/img_db_scheme.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">Modified i2b2 Common Data Model (CDM) 16 star schema with additional tables for user management and CQL rules application.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </figcaption>
@@ -389,13 +391,13 @@ answers attached in the CONCEPT_PATH</p></td>
 </table>
 <p>The following figures show the definition of a scheme using various data types:</p>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../_images/img_data_input_example01.png"><img alt="../_images/img_data_input_example01.png" src="../_images/img_data_input_example01.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/img_data_input_example01.png"><img alt="_images/img_data_input_example01.png" src="_images/img_data_input_example01.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">Screenshot from the user interface showing the definition of a schema with different data types.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="../_images/img_data_input_example02.png"><img alt="../_images/img_data_input_example02.png" src="../_images/img_data_input_example02.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/img_data_input_example02.png"><img alt="_images/img_data_input_example02.png" src="_images/img_data_input_example02.png" style="width: 400px;" /></a>
 <figcaption>
 <p><span class="caption-text">Further details of the example scheme.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </figcaption>
@@ -417,7 +419,7 @@ answers attached in the CONCEPT_PATH</p></td>
 <p>The scheme definition is stored within the database in the <cite>CODE_LOOKUP</cite> table.</p>
 <p>The following image shows the scheme definition of the example scheme from the previous section:</p>
 <figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="../_images/img_data_input_schemeindb.png"><img alt="../_images/img_data_input_schemeindb.png" src="../_images/img_data_input_schemeindb.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/img_data_input_schemeindb.png"><img alt="_images/img_data_input_schemeindb.png" src="_images/img_data_input_schemeindb.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">Screenshot created using SQL DB Browser showing the scheme definition in the database.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </figcaption>
@@ -427,14 +429,14 @@ answers attached in the CONCEPT_PATH</p></td>
 <h3>Entering data using a scheme<a class="headerlink" href="#entering-data-using-a-scheme" title="Permalink to this heading">¶</a></h3>
 <p>To <strong>input observations using a scheme</strong>, a <cite>patient</cite> and a <cite>visit</cite> must be selected in the UI. By clicking on the <cite>Add</cite> button, the user can select a scheme from the list of available schemes.</p>
 <figure class="align-center" id="id7">
-<a class="reference internal image-reference" href="../_images/img_data_input_scheme.png"><img alt="../_images/img_data_input_scheme.png" src="../_images/img_data_input_scheme.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/img_data_input_scheme.png"><img alt="_images/img_data_input_scheme.png" src="_images/img_data_input_scheme.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">Screenshot from the user interface showing a scheme.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>The data is then stored in the database to the <cite>OBSERVATION_FACT</cite> table. The following images shows the data that was entered using the scheme from the previous section:</p>
 <figure class="align-center" id="id8">
-<a class="reference internal image-reference" href="../_images/img_data_input_db.png"><img alt="../_images/img_data_input_db.png" src="../_images/img_data_input_db.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/img_data_input_db.png"><img alt="_images/img_data_input_db.png" src="_images/img_data_input_db.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">Screenshots from the user interface display data entered according to the schema outlined in the previous section, as viewed through <cite>SQL DB Browser</cite>.</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </figcaption>
@@ -492,7 +494,7 @@ answers attached in the CONCEPT_PATH</p></td>
 <p class="admonition-title">Note</p>
 <p>For SNOMED, we offer an integrated SNOMED-CT API that can be accessed directly from the user interface during concept editing.</p>
 <figure class="align-center" id="id9">
-<a class="reference internal image-reference" href="../_images/img_db_concept_api.png"><img alt="../_images/img_db_concept_api.png" src="../_images/img_db_concept_api.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/img_db_concept_api.png"><img alt="_images/img_db_concept_api.png" src="_images/img_db_concept_api.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">When you select <cite>SNOMED</cite> as the <cite>SOURCESYSTEM_CD</cite>, an API query option becomes available, symbol is denoted by a green arrow. This query feature allows you to search for <cite>SNOMED</cite> concepts and obtain the corresponding <cite>CONCEPT_CD</cite> and <cite>CONCEPT_PATH</cite>, or to retrieve information associated with a specific <cite>CONCEPT_CD</cite>.</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
 </figcaption>
@@ -523,7 +525,7 @@ answers attached in the CONCEPT_PATH</p></td>
 </ul>
 <p>Therefore we introduced the concept of concept aliases or <cite>related concepts</cite>. This is illustrated in the following figure.</p>
 <figure class="align-center" id="id10">
-<a class="reference internal image-reference" href="../_images/img_db_concept_related.png"><img alt="../_images/img_db_concept_related.png" src="../_images/img_db_concept_related.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/img_db_concept_related.png"><img alt="_images/img_db_concept_related.png" src="_images/img_db_concept_related.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">The concept <cite>LID: 70190-4</cite> serves as the primary concept, whereas <cite>LID: 70967-5</cite> functions as an alias. These two are linked through the <cite>RELATED_CONCEPT</cite> column. Consequently, the alias inherits the same set of answers as the primary concept.</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
 </figcaption>
@@ -557,13 +559,13 @@ answers attached in the CONCEPT_PATH</p></td>
 <p>To analyze the data directly from the database, the SQLite DB can be seamlessly integrated into KNIME 5.1 (<a class="reference external" href="https://www.knime.com">https://www.knime.com</a>).</p>
 <p>Below is an example illustrating how to incorporate the data from the SQLite DB into KNIME.</p>
 <figure class="align-center" id="id11">
-<a class="reference internal image-reference" href="../_images/img_data_integration_knime01.png"><img alt="../_images/img_data_integration_knime01.png" src="../_images/img_data_integration_knime01.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/img_data_integration_knime01.png"><img alt="_images/img_data_integration_knime01.png" src="_images/img_data_integration_knime01.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">Sample KNIME workspace to connect to the DB and transform the data into a tabular format suitable for further analysis.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id12">
-<a class="reference internal image-reference" href="../_images/img_data_integration_knime02.png"><img alt="../_images/img_data_integration_knime02.png" src="../_images/img_data_integration_knime02.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/img_data_integration_knime02.png"><img alt="_images/img_data_integration_knime02.png" src="_images/img_data_integration_knime02.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">Screenshot from the output of a python script node, which is used to transform the data into a tabular format suitable for further analysis.</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
 </figcaption>
@@ -649,7 +651,7 @@ answers attached in the CONCEPT_PATH</p></td>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="../index.html">Technical Description of JCRdb (Jena Clinical Research Database) v1.0</a></h1>
+<h1 class="logo"><a href="index.html">Technical Description of JCRdb (Jena Clinical Research Database) v1.0</a></h1>
 
 
 
@@ -659,18 +661,37 @@ answers attached in the CONCEPT_PATH</p></td>
 
 
 <h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Content:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Technical Description of JCRdb (Jena Clinical Research Database) v1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#motivation">1. Motivation:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">2. Overview:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#architecture">3. Architecture:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#technical-details">4. Technical Details:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#key-features">5. Key Features:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#security-and-compliance">6. Security and Compliance:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#integration-extensibility">7. Integration &amp; Extensibility:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing-validation">8. Testing &amp; Validation:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conclusion-future-work">9. Conclusion &amp; Future Work:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#acknowledgements">10. Acknowledgements:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#appendix">11. Appendix:</a></li>
+</ul>
+</li>
+</ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
-  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">&lt;no title&gt;</a></li>
+      <li>Next: <a href="TechnicalDetails_Appendix_Concepts.html" title="next chapter">Concepts predefined in the database</a></li>
   </ul></li>
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
+    <form class="search" action="search.html" method="get">
       <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
@@ -697,7 +718,7 @@ answers attached in the CONCEPT_PATH</p></td>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
       
       |
-      <a href="../_sources/db/TechnicalDetails.rst.txt"
+      <a href="_sources/TechnicalDetails.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

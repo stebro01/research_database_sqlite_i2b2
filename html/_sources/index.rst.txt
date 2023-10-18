@@ -8,5 +8,5 @@
    :maxdepth: 2
    :caption: Content:
 
-   ./db/TechnicalDetails
+   TechnicalDetails
 
