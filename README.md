@@ -9,6 +9,6 @@ Ressources and documentation
 
 ## Documentation
 
-+ the PDF manual can be found in: `./manual` [link](https://github.com/stebro01/research_database_sqlite_i2b2/blob/491a2c6115b05c83043b648bd8225b67ca255cd4/manual/technical_description_v202310sb.pdf)
++ the PDF manual can be found in: `./manual` 
 + the HTML documentation can be accessed via GitHub Pages: [HTML documentation](https://github.com/stebro01/research_database_sqlite_i2b2/tree/491a2c6115b05c83043b648bd8225b67ca255cd4/html)
 
